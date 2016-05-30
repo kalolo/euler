@@ -19,7 +19,7 @@ def prime_factor(n)
 
     return factors if ( factors.inject(:*).to_i >= n )
 
-    if ( n % p == 0  && factors.inject(:*).to_i < n  )
+    if ( n % p == 0 )
       factors.push(p)
     end
 
